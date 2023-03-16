@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Project Form with Sticky Header</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   
+    <section>
+        <form action="#" method="POST">
+            <h2>Project Form</h2>
+            <p>Fill in the fields below and describe your needs</p>
+            <fieldset>
+                <div>
+                    <label for="name">Name/Surname</label>
+                    <input id="name" type="text" placeholder="e.g. Jane Doe" required>
+                </div>
+                <div>
+                    <label for="company">Company (optional)</label>
+                    <input id="company"  type="text" placeholder="company name">
+                </div>
+                <div>
+                    <label for="phone">Phone</label>
+                    <input id="phone"  type="tel" placeholder="phone #" required>
+                </div>
+                <div>
+                    <label for="location">City</label>
+                    <input id="location"  type="text" placeholder="where do you live" required>
+                </div>
+                <div>
+                    <label for="email">Email Address</label>
+                    <input id="email"  type="email" placeholder="hello@example.ca" required>
+                </div>
+                <div>
+                    <label for="website">Website</label>
+                    <input id="website"  type="url" placeholder="https:// or http:// first....">
+                </div>
+            </fieldset>
+            <fieldset>
+                <h3>Specifics</h3>
+                <div>
+                    <label for="deadline">Deadline</label>
+                    <input id="deadline" type="date" required>
+                </div>
+                <div>
+                    <label for="budget">Budget</label>
+                    <select name="budget" id="budget"   required>
+                        <option value="">Choose your budget</option>
+                        <option value="1000-3000">$1000 - $3000</option>
+                        <option value="4000-8000">$4000 - $8000</option>
+                        <option value="9000-12000">$9000 -12,000</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="message">Project Description</label>
+                    <textarea id="message" maxlength="250" placeholder="Describe your needs or any other specifics" required></textarea>
+                </div>
+            </fieldset>
+            <div>
+                <p>By completeing and sending the data, you agree to the privacy policy</p>
+                <input id="accept" type="checkbox" required>
+                <label for="accept">Accept</label>
+            </div>
+            <div>
+                <input type="submit" value="Send >">
+                <!-- <button type="submit">Send</button> -->
+            </div>
+        </form>
+    </section>
+
+</body>
+</html>
